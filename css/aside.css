@@ -4,7 +4,7 @@ aside {
     flex-direction: column;
 }
 
-aside>section {
+.aside-content {
     margin: 6px;
     max-height: 500px;
     border-radius: 20px;
@@ -57,7 +57,7 @@ aside>section {
 }
 
 @media(max-width: 1030px) {
-    aside>section {
+    .book {
         flex-flow: row;
         gap: 10px;
     }
