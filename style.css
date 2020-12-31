@@ -80,7 +80,6 @@ main > article {
 
 .blog-post {
     padding-bottom: 20px;
-    border-bottom: double;
 }
 main > aside {
     grid-area: 1 / 2 / 3 / 3;
@@ -244,6 +243,7 @@ footer > section {
     }
     aside > section {
         flex-flow: row;
+        gap: 10px;
     }
     #footer-content {
         flex-direction: column;
