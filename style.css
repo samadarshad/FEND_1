@@ -13,8 +13,16 @@ p, ul {
 /* * { border: 1px dotted black; } */
 body {
     background-color: pink;
+    padding: 0px;
+    margin: 0px;
 }
 header {
+    height: auto;
+    width: 100%;
+    background-color: rgb(255, 232, 236);
+    background-size: 100% 100%;
+}
+.header-content {
     max-width: 1000px;
     margin: auto;     
     display: grid;
@@ -102,19 +110,25 @@ aside > section {
 #storyworthy {
     background-image: url("https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1514780933l/37786022._SY475_.jpg");
 }
+#the-mythical-man-month {
+    background-image: url("mythical-man-month.png");
+}
+#how-to-solve-it {
+    background-image: url("how_to_solve_it.jpg");
+}
 
 blockquote {
-    /* border: 1px solid gray; */
     background-color: rgb(255, 232, 236);
     padding: 2%;
     border-radius: 20px;
     display: grid;
     grid-template-columns: 50px auto;
+    
 }
-#tristram-quote {
+/* #tristram-quote {
     display: grid;
     grid-template-columns: 50px auto;
-}
+} */
 .quote {
     font-style: bold;
 }
@@ -123,8 +137,8 @@ blockquote {
     font-style: italic;
     text-align: right;
 }
-#tristram-quote > .quote-image {
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/LetterT.svg/91px-LetterT.svg.png");
+.quote-image {
+    background-image: url("https://www.flaticon.com/svg/static/icons/svg/59/59149.svg");
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -158,6 +172,7 @@ footer > section {
 #samad-footer{
     display: grid;
     grid-template-columns: 50px auto;
+    grid-column-gap: 10px;
 }
 
 #samad-footer > .footer-image {
@@ -169,6 +184,7 @@ footer > section {
 #udacity-footer{
     display: grid;
     grid-template-columns: 50px auto;
+    grid-column-gap: 10px;
 }
 
 #udacity-footer > .footer-image {
@@ -177,9 +193,10 @@ footer > section {
     background-repeat: no-repeat;
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 1030px) {
     main {
         display: block;
+        max-width: 700px;
     }
     aside > section {
         flex-flow: row;
