@@ -10,7 +10,7 @@ p, ul {
     font-family: 'Roboto', sans-serif;
 }
 
-* { border: 1px dotted black; }
+/* * { border: 1px dotted black; } */
 body {
     background-color: pink;
     padding: 0px;
@@ -133,10 +133,7 @@ blockquote {
     grid-template-columns: 50px auto;
     
 }
-/* #tristram-quote {
-    display: grid;
-    grid-template-columns: 50px auto;
-} */
+
 .quote {
     font-style: bold;
 }
@@ -150,6 +147,42 @@ blockquote {
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+.featured > h4{
+    text-transform:uppercase;
+}
+.featured {
+    background-color: pink;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    /* margin: 0px; */
+    /* width: 100%;  */
+}
+
+.blog-card {
+    display: grid;
+    grid-template-columns: auto 50px;
+    margin: -14px;
+    padding: 10px;
+    background-color: rgb(255, 232, 236);;
+}
+
+.blog-card-image {    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#blog-card-1-image {
+    background-image: url("https://www.flaticon.com/svg/static/icons/svg/59/59149.svg");
+}
+
+#blog-card-2-image {
+    background-image: url("https://www.flaticon.com/svg/static/icons/svg/845/845768.svg");
+}
+
+
 
 footer {
     /* position: absolute; */
@@ -217,4 +250,5 @@ footer > section {
         flex-flow: column;
         max-height: 250px;
     }
+  
 }
