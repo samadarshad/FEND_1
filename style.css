@@ -1,34 +1,72 @@
 @import url("https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-
+* { border: 1px dotted black; }
 body {
     background-color: pink;
+    border: 1px solid black;
+    max-width: 1000px;
+    margin: auto;
+    
 }
-
+header {
+    display: grid;
+    grid-template-columns: 100px auto;
+}
+#page-title {
+    text-align: center;
+}
+#logo {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("https://logopond.com/logos/ec80ea40ad55c7e6415d87eb6b1651ed.png");
+    mix-blend-mode: multiply;
+    width: 100%;
+    height: 100%;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 main {
+    padding: 1%;
     display: grid;
     grid-template-columns: auto 300px;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
 main > article {
+    padding: 1%;
     grid-area: 1 / 1 / 2 / 2;
 }
 main > aside {
     grid-area: 1 / 2 / 2 / 3;
+
+    display: flex;
+    flex-flow: column;
 }
 aside > section {
     border: 1px solid black;
     border-radius: 4%;
     background-color: #f1f1f1;
     padding: 4%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    flex: 300px;
+    display: flex;
+    flex-flow: column;
 }
-aside > section > * {
-    max-width: calc(100% - 50px);
+.book-image {
+    flex: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#never-split-the-difference {
+    background-image: url("https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1460910517l/26156469.jpg");
+}
+
+#storyworthy {
+    background-image: url("https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1514780933l/37786022._SY475_.jpg");
 }
 
 @media(max-width: 900px) {
@@ -40,14 +78,32 @@ aside > section > * {
     }
 }
 
+footer {
+    border: 1px solid black;
+    height: 100px;
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
 #samad-footer{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 50px auto;
+}
+
+#samad-footer > .image {
     background-image: url("https://media-exp1.licdn.com/dms/image/C4D03AQHCOVj9Kw-OIw/profile-displayphoto-shrink_200_200/0/1600191968727?e=1614816000&v=beta&t=S7pPASYlrBuUttkrShnHWRvNrRbNUfD3DNGk7RUfNp4");
     background-size: contain;
     background-repeat: no-repeat;
 }
 
 #udacity-footer{
-    background-image: url("https://d20vrrgs8k4bvw.cloudfront.net/images/open-graph/udacity.png");
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 50px auto;
+}
+
+#udacity-footer > .image {
+    background-image: url("https://cdn.worldvectorlogo.com/logos/udacity.svg");
     background-size: contain;
     background-repeat: no-repeat;
 }
