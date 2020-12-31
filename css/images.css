@@ -21,7 +21,6 @@
 
 .quote-image {
     background-image: url("https://www.flaticon.com/svg/static/icons/svg/59/59149.svg");
-
 }
 
 #blog-card-1-image {
@@ -32,10 +31,10 @@
     background-image: url("https://www.flaticon.com/svg/static/icons/svg/845/845768.svg");
 }
 
-#samad-footer > .footer-image {
+#samad-footer>.footer-image {
     background-image: url("https://media-exp1.licdn.com/dms/image/C4D03AQHCOVj9Kw-OIw/profile-displayphoto-shrink_200_200/0/1600191968727?e=1614816000&v=beta&t=S7pPASYlrBuUttkrShnHWRvNrRbNUfD3DNGk7RUfNp4");
 }
 
-#udacity-footer > .footer-image {
+#udacity-footer>.footer-image {
     background-image: url("https://cdn.worldvectorlogo.com/logos/udacity.svg");
 }

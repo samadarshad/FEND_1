@@ -3,7 +3,7 @@ blockquote {
     padding: 2%;
     border-radius: 20px;
     display: grid;
-    grid-template-columns: 50px auto;    
+    grid-template-columns: 50px auto;
 }
 
 .quote {
