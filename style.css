@@ -1,14 +1,22 @@
 @import url("https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-* { border: 1px dotted black; }
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto&display=swap');
+
+h1, h2, h3, h4, h5, h6
+{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+p, ul {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* * { border: 1px dotted black; } */
 body {
     background-color: pink;
-    border: 1px solid black;
-    max-width: 1000px;
-    margin: auto;
-    
 }
 header {
+    max-width: 1000px;
+    margin: auto;     
     display: grid;
     grid-template-columns: 100px auto;
 }
@@ -25,16 +33,22 @@ header {
     height: 100%;
 }
 nav {
+    max-width: 1000px;
+    margin: auto; 
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 main {
+    max-width: 1000px;
+    min-height: 700px;
+    margin: auto;
     padding: 1%;
     display: grid;
     grid-template-columns: auto 300px;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    padding-bottom: 100px;
 }
 main > article {
     padding: 1%;
@@ -43,11 +57,12 @@ main > article {
 main > aside {
     grid-area: 1 / 2 / 2 / 3;
 
-    display: flex;
-    flex-flow: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 5px;
+    
 }
 aside > section {
-    border: 1px solid black;
     border-radius: 4%;
     background-color: #f1f1f1;
     padding: 4%;
@@ -69,23 +84,59 @@ aside > section {
     background-image: url("https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1514780933l/37786022._SY475_.jpg");
 }
 
-@media(max-width: 900px) {
+blockquote {
+    /* border: 1px solid gray; */
+    background-color: rgb(255, 232, 236);
+    padding: 2%;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 50px auto;
+}
+#tristram-quote {
+    display: grid;
+    grid-template-columns: 50px auto;
+}
+.quote {
+    font-style: bold;
+}
+.author {
+    width: 100%;
+    font-style: italic;
+    text-align: right;
+}
+#tristram-quote > .image {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/LetterT.svg/91px-LetterT.svg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media(max-width: 1000px) {
     main {
         display: block;
     }
     aside > section {
-        grid-template-columns: repeat(2, 1fr);
+        flex-flow: row;
     }
 }
 
 footer {
-    border: 1px solid black;
+    /* position: absolute; */
+    /* bottom: 0; */
     height: 100px;
+    width: 100%;
     display: grid;
     grid-template-rows: 50% 50%;
+    background-color: rgb(255, 232, 236);
+    background-size: 100% 100%;
+    
+}
+#footer-content {
+  width: 1000px;  
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 #samad-footer{
-    border: 1px solid black;
     display: grid;
     grid-template-columns: 50px auto;
 }
@@ -97,7 +148,6 @@ footer {
 }
 
 #udacity-footer{
-    border: 1px solid black;
     display: grid;
     grid-template-columns: 50px auto;
 }
