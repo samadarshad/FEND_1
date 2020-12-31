@@ -1,0 +1,22 @@
+blockquote {
+    background-color: rgb(255, 232, 236);
+    padding: 2%;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 50px auto;    
+}
+
+.quote {
+    font-style: bold;
+}
+
+.author {
+    width: 100%;
+    font-style: italic;
+    text-align: right;
+}
+
+.quote-image {
+    background-size: contain;
+    background-repeat: no-repeat;
+}
