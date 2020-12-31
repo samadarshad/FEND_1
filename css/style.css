@@ -92,7 +92,7 @@ main > aside {
 aside > section {
     margin: 6px;
     max-height:500px;
-    border-radius: 4%;
+    border-radius: 20px;
     background-color: #f1f1f1;
     padding: 4%;
     flex: 300px;
@@ -119,10 +119,10 @@ aside > section {
     background-image: url("https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1514780933l/37786022._SY475_.jpg");
 }
 #the-mythical-man-month {
-    background-image: url("mythical-man-month.png");
+    background-image: url("../images/mythical-man-month.png");
 }
 #how-to-solve-it {
-    background-image: url("how_to_solve_it.jpg");
+    background-image: url("../images/how_to_solve_it.jpg");
 }
 
 blockquote {
