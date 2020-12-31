@@ -45,4 +45,7 @@ footer>section {
     #footer-content {
         flex-direction: column;
     }
+    footer {
+        padding: 6px;
+    }
 }
