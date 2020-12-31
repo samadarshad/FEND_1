@@ -159,7 +159,10 @@ blockquote {
     /* margin: 0px; */
     /* width: 100%;  */
 }
-
+.featured-title {
+    border-bottom: 3px solid rgb(189, 144, 152) ;
+    margin: -14px;
+}
 .blog-card {
     display: grid;
     grid-template-columns: auto 50px;
@@ -249,6 +252,9 @@ footer > section {
     .subscribe {
         flex-flow: column;
         max-height: 250px;
+    }
+    .featured {
+        flex-flow: column;
     }
   
 }
