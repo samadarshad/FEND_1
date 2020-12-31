@@ -10,7 +10,7 @@ p, ul {
     font-family: 'Roboto', sans-serif;
 }
 
-/* * { border: 1px dotted black; } */
+* { border: 1px dotted black; }
 body {
     background-color: pink;
     padding: 0px;
@@ -63,7 +63,10 @@ main > .blog-title {
 main > article {
     padding: 1%;
     grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+    flex-direction: column;
 }
+
 .blog-image {
     width: 100%;
     background-size: contain;
@@ -95,6 +98,11 @@ aside > section {
     flex: 300px;
     display: flex;
     flex-flow: column;
+}
+.subscribe {
+    background-color: #021637;
+    color: white;
+    max-height:300px;
 }
 .book-image {
     flex: 300px;
@@ -204,5 +212,9 @@ footer > section {
     #footer-content {
         flex-direction: column;
         
+    }
+    .subscribe {
+        flex-flow: column;
+        max-height: 250px;
     }
 }
