@@ -39,11 +39,9 @@ footer {
 }
 
 @media(max-width: 1030px) {
-    #footer-content {
-        flex-direction: column;
-        align-items: center;
-    }
-    footer {
-        padding: 6px;
+    .footer-text {
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
     }
 }

@@ -6,9 +6,10 @@ blockquote {
     grid-template-columns: 50px auto;
 }
 
-.quote {
+
+/* .quote {
     font-style: bold;
-}
+} */
 
 .author {
     width: 100%;

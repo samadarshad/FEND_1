@@ -1,0 +1,21 @@
+.social-media {
+    max-height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.social-media ul,
+.social-media li {
+    gap: 10px;
+    list-style-type: none;
+}
+
+.social-media ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.social-image {
+    width: 50px;
+}
