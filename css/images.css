@@ -57,3 +57,7 @@
 #linkedin-image {
     content: url("https://www.flaticon.com/svg/static/icons/svg/145/145807.svg");
 }
+
+#change-curve {
+    max-height: 500px;
+}
